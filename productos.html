@@ -1,0 +1,633 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology & Phones</title>
+    
+  
+  
+
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link rel="StyleSheet" href="css/productos.css">  
+  
+<!-- Css -->
+<link rel="StyleSheet" href="">  
+<!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <style>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+html {
+    height: 100%;
+}
+
+header{
+  background-color: #21242a ;
+  left: 0;
+    right: 0;
+    width: 100%;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.6em;
+}
+
+body {
+    height: 100%;
+    background: rgb(194, 197, 197);
+   
+}
+
+.cardcategorias{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+.cardcategorias .img{
+    width: 65%;
+    height: 65%;
+    
+    
+}
+
+.cardcategorias .card{
+  align-items:center;  
+  padding: 1.5em .5em .5em;
+    border-radius: 2em;
+    text-align: center;
+    box-shadow: 0 5px 10px #007bff;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  
+  cursor: pointer;
+}
+
+.cardcategorias .card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 5px 10px black;
+}
+
+.navegador{
+  float: right;
+}
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 100px;
+}
+
+.imagen1 {
+  position: relative;
+    
+}
+
+.imagen1 .imagen2 {
+  position: absolute;  
+  top: 0;  
+  left: 0;
+  opacity: 0;
+  transition: .5s;
+
+}
+
+.imagen1:hover .imagen2 {
+  opacity: 1;
+}
+
+
+.card-body .datos {
+	border-top: 2px solid #e2e2e2;
+	border-bottom: 2px solid #e2e2e2;
+	padding: 20px;
+}
+
+.card-body .datos h3 {
+	margin: 10px 0;
+}
+
+.card-body .datos h3 a {
+	text-decoration: none;
+	color: #2b2b2b;
+	font-size: 14px;
+	display: block;
+	text-transform: uppercase;
+}
+
+.card-body .datos h3 a:hover {
+	text-decoration: underline;
+}
+
+.card-body .datos small a {
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	display: block;
+	margin-top: 10px;
+	color: #5a5a5a;
+	font-size: 11px;
+}
+
+.card-body .datos small {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #5a5a5a;
+}
+
+.card-body .precios {
+	padding: 20px;
+	display: flex
+}
+
+.card-body .precios div {
+	flex-grow: 1;
+}
+
+.card-body .precios div small {
+	display: block;
+	font-size: 15px;
+	margin-bottom: 5px;
+	color: #828282;
+	font-weight: 600;
+}
+.card-body .precios div.internet span {
+	font-weight: bold;
+	font-size: 23px;
+	color: #ff0808;
+}
+
+.card-body .precios div span {
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.card-body .btn-carrito {
+	display: block;
+	text-align: center;
+	padding: 15px;
+	background: #007bff;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 100px;
+	color: #fff;
+	text-decoration: none;
+	display: none;
+	transition: all ease-in-out 0.3s;
+}
+
+.card-body .btn-carrito:hover {
+	transform: scale(1.05);
+}
+
+.card-body:hover .btn-carrito {
+	display: block;
+}
+
+footer
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/*Elimina el subrayado de los link */
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+  </style>
+
+</head>
+
+<body>
+  
+  <header>
+    <div class="container">
+      
+      
+        <div class="row">
+          
+            <div class="col-12 text-center">
+              <p class="logo" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px;">Technology & Phones</p>
+            </div>
+
+            <div class="col-12 text-center">
+              <a class="button" alt="Sucursales" title="Tienda" style="background-color:transparent;" href="#!" role="button"><i class="bi bi-shop"></i></a>
+              <a class="img" style="background-color:transparent;" title="Código Postal" ><i class="bi bi-geo-alt"></i></a>
+              <input type="number" pattern="[0-9]" placeholder="Código postal" id="cp" style="border-radius: 7px;">
+    
+              <a class="button" title="Clientes"style="background-color:transparent;" href="#!" role="button"><i class="bi bi-person"></i></a>
+              <a class="button" title="Carrito de compras" style="background-color:transparent;" href="#!" role="button"><i class="bi bi-cart3"></i></a>
+                  </div>
+
+        </div>
+    </div>
+
+</header>
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="imagenes/logo.png" alt="Logo" style="width:40px; height:40px;" class="rounded-pill"> 
+      </a>
+      <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link</a></li>
+              <li><a class="dropdown-item" href="#">Another link</a></li>
+              <li><a class="dropdown-item" href="#">A third link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Buscar">
+          <button class="btn btn-primary" type="button">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
+    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+        <div class="col"> 
+           <div class="card h-100 shadow-sm"> 
+           <img src="https://www.freepnglogos.com/uploads/notebook-png/download-laptop-notebook-png-image-png-image-pngimg-2.png" class="card-img-top" alt="..."> 
+           <div class="card-body"> 
+               <div class="clearfix mb-3">
+                   <span class="float-start badge rounded-pill bg-primary">ASUS Rog</span> 
+                   <span class="float-end price-hp">12354.00&euro;</span> 
+               </div>
+               <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
+                   eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
+               <div class="text-center my-4"> 
+                   <a href="#" class="btn btn-warning">Check offer</a>
+                </div>
+                </div> 
+               </div> 
+           </div> 
+           <div class="col"> 
+               <div class="card h-100 shadow-sm"> 
+                   <img src="https://www.freepnglogos.com/uploads/notebook-png/notebook-laptop-png-images-you-can-download-mashtrelo-14.png" class="card-img-top" alt="...">
+                   <div class="card-body"> 
+                       <div class="clearfix mb-3">
+                            <span class="float-start badge rounded-pill bg-success">12354.00&euro;</span> 
+                            <span class="float-end"><a href="#">Example</a></span> 
+                           </div>
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
+                               eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
+                               <div class="d-grid gap-2 my-4">
+                                    <a href="#" class="btn btn-warning">Check offer</a> 
+                                   </div> 
+                               </div> 
+                           </div> 
+                       </div> 
+                       <div class="col"> 
+                           <div class="card h-100 shadow-sm"> 
+                               <img src="https://www.freepnglogos.com/uploads/notebook-png/download-laptop-notebook-png-image-png-image-pngimg-2.png" class="card-img-top" alt="...">
+                                <div class="label-top shadow-sm">Asus Rog</div> 
+                                <div class="card-body"> 
+                                   <div class="clearfix mb-3">
+                                        <span class="float-start badge rounded-pill bg-success">12354.00&euro;</span> 
+                                        <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span> 
+                                       </div> 
+                                       <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
+                                           eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
+                                           <div class="text-center my-4">
+                                                <a href="#" class="btn btn-warning">Check offer</a> 
+                                               </div> 
+                                               <div class="clearfix mb-1"> 
+                                                   <span class="float-start">
+                                                       <i class="far fa-question-circle"></i></span>
+                                                        <span class="float-end"><i class="fas fa-plus"></i></span>
+                                                        </div>
+                                                        </div>
+                                                        </div> 
+                                                       </div> 
+                                                       <div class="col"> 
+                                                           <div class="card h-100 shadow-sm">
+                                                                <img src="https://www.freepnglogos.com/uploads/notebook-png/notebook-laptop-png-images-you-can-download-mashtrelo-14.png" class="card-img-top" alt="...">
+                                                                 <div class="label-top shadow-sm">DELL</div> 
+                                                                 <div class="card-body">
+                                                                    <div class="clearfix mb-3"> 
+                                                                       <span class="float-start price-hp">12354.00&euro;</span>
+                                                                        <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span> 
+                                                                       </div> 
+                                                                       <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
+                                                                           eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
+                                                                           <div class="text-center my-4">
+                                                                                <a href="#" class="btn btn-warning">Check offer</a>
+                                                                                </div> <div class="clearfix mb-1"> 
+                                                                                   <span class="float-start"><i class="far fa-question-circle"></i></span> 
+                                                                                   <span class="float-end"><i class="fas fa-plus"></i></span> 
+                                                                               </div>
+                                                                            </div> 
+                                                                           </div> 
+                                                                       </div> 
+                                                                       <div class="col"> 
+                                                                           <div class="card h-100 shadow-sm"> 
+                                                                           <img src="https://www.freepnglogos.com/uploads/notebook-png/download-laptop-notebook-png-image-png-image-pngimg-2.png" class="card-img-top" alt="..."> 
+                                                                           <div class="card-body"> 
+                                                                               <div class="clearfix mb-3">
+                                                                                   <span class="float-start badge rounded-pill bg-primary">ASUS Rog</span> 
+                                                                                   <span class="float-end price-hp">12354.00&euro;</span> 
+                                                                               </div>
+                                                                               <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
+                                                                                   eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
+                                                                               <div class="text-center my-4"> 
+                                                                                   <a href="#" class="btn btn-warning">Check offer</a>
+                                                                                </div>
+                                                                                </div> 
+                                                                               </div> 
+                                                                           </div> 
+                                                                           <div class="col"> 
+                                                                               <div class="card h-100 shadow-sm"> 
+                                                                                   <img src="https://www.freepnglogos.com/uploads/notebook-png/notebook-laptop-png-images-you-can-download-mashtrelo-14.png" class="card-img-top" alt="...">
+                                                                                   <div class="card-body"> 
+                                                                                       <div class="clearfix mb-3">
+                                                                                            <span class="float-start badge rounded-pill bg-success">12354.00&euro;</span> 
+                                                                                            <span class="float-end"><a href="#">Example</a></span> 
+                                                                                           </div>
+                                                                                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
+                                                                                               eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
+                                                                                               <div class="d-grid gap-2 my-4">
+                                                                                                    <a href="#" class="btn btn-warning">Check offer</a> 
+                                                                                                   </div> 
+                                                                                               </div> 
+                                                                                           </div> 
+                                                                                       </div> 
+                                                                                       <div class="col"> 
+                                                                                           <div class="card h-100 shadow-sm"> 
+                                                                                               <img src="https://www.freepnglogos.com/uploads/notebook-png/download-laptop-notebook-png-image-png-image-pngimg-2.png" class="card-img-top" alt="...">
+                                                                                                <div class="label-top shadow-sm">Asus Rog</div> 
+                                                                                                <div class="card-body"> 
+                                                                                                   <div class="clearfix mb-3">
+                                                                                                        <span class="float-start badge rounded-pill bg-success">12354.00&euro;</span> 
+                                                                                                        <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span> 
+                                                                                                       </div> 
+                                                                                                       <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
+                                                                                                           eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
+                                                                                                           <div class="text-center my-4">
+                                                                                                                <a href="#" class="btn btn-warning">Check offer</a> 
+                                                                                                               </div> 
+                                                                                                               <div class="clearfix mb-1"> 
+                                                                                                                   <span class="float-start">
+                                                                                                                       <i class="far fa-question-circle"></i></span>
+                                                                                                                        <span class="float-end"><i class="fas fa-plus"></i></span>
+                                                                                                                        </div>
+                                                                                                                        </div>
+                                                                                                                        </div> 
+                                                                                                                       </div> 
+                                                                                                                       <div class="col"> 
+                                                                                                                           <div class="card h-100 shadow-sm">
+                                                                                                                                <img src="https://www.freepnglogos.com/uploads/notebook-png/notebook-laptop-png-images-you-can-download-mashtrelo-14.png" class="card-img-top" alt="...">
+                                                                                                                                 <div class="label-top shadow-sm">DELL</div> 
+                                                                                                                                 <div class="card-body">
+                                                                                                                                    <div class="clearfix mb-3"> 
+                                                                                                                                       <span class="float-start price-hp">12354.00&euro;</span>
+                                                                                                                                        <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span> 
+                                                                                                                                       </div> 
+                                                                                                                                       <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
+                                                                                                                                           eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
+                                                                                                                                           <div class="text-center my-4">
+                                                                                                                                                <a href="#" class="btn btn-warning">Check offer</a>
+                                                                                                                                                </div> <div class="clearfix mb-1"> 
+                                                                                                                                                   <span class="float-start"><i class="far fa-question-circle"></i></span> 
+                                                                                                                                                   <span class="float-end"><i class="fas fa-plus"></i></span> 
+                                                                                                                                               </div>
+                                                                                                                                            </div> 
+                                                                                                                                           </div> 
+                                                                                                                                       </div> 
+                                                                   </div> 
+                                                               </div>
+                                                              </main>
+
+
+
+<!--FOOTER-->
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #3e4551"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Copyright © 2023 Technology & Phones.</h5>
+
+            <p>
+              El uso de este sitio web implica la aceptación de 
+              los Términos y Condiciones y de las Políticas de Privacidad
+              de Technology & Phones. Las fotos son a modo ilustrativo. 
+              La venta de cualquiera de los productos publicados está sujeta
+              a la verificación de stock. Los precios online para los productos
+              presentados/publicados son válidos exclusivamente para la compra 
+              vía internet.
+            </p>
+          </div>
+          <!--Grid column-->
+
+ <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Categorías</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Smart TV</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Celulares</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Infomática</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Hogar</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+  <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Marcas</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Motorola</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Philips</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Dream</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Hitachi</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+         
+
+          <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Servicios</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Compras con crédito</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Área de clientes</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Catálogo</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Envío Express</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+        
+
+          <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Ayuda</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Sucursales</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Centro de ayuda</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Medios de pagos</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Soporte técnico</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="mb-4" />
+
+      <!-- Section: CTA -->
+      <section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3">Regístrate gratis</span>
+          <button type="button" class="btn btn-outline-light btn-rounded">
+            Ingresar
+          </button>
+        </p>
+      </section>
+      <!-- Section: CTA -->
+
+      <hr class="mb-4" />
+
+      <!-- Section: Social media -->
+      <section class="mb-4 text-center">
+
+<!-- Facebook -->
+<a class="btn btn-primary" style="background-color:blue;" href="#!" role="button" >
+  <i class="bi bi-facebook"></i></a>
+
+<!-- Twitter -->
+<a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"
+  ><i class="bi bi-twitter"></i
+></a>
+
+<!-- Google -->
+<a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"
+  ><i class="bi bi-google"></i
+></a>
+
+<!-- Instagram -->
+<a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"
+  ><i class="bi bi-instagram"></i
+></a>
+
+<!-- Linkedin -->
+<a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"
+  ><i class="bi bi-linkedin"></i
+></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2023 Copyright:
+      <a class="text-white" href="" >RAMOS Juan Carlos</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+</body>
+
+
+
+</html>
