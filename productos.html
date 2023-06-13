@@ -282,12 +282,36 @@ a:link, a:visited, a:active {
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link" href="productos.html">Productos</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="window.modal1.showModal();">Ventana modal</a>
+            
+            <!-- inicio Modal -->
+            <dialog id="modal1" style="border-radius: 5px; border-color: transparent">
+              <div class="modal-dialog">
+                <div class="modal-content" style="border-color: transparent;">
+                  <!-- Modal Header -->
+                  <div class="modal-header" style="border-color: transparent;">
+                    <h4 class="modal-title">Información</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="window.modal1.close();"></button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body" style="border-color: transparent;">
+                    Modal body..
+                     <img style="width: 100%;height: 100%;" src="https://www.freepnglogos.com/uploads/laptop-png/download-laptop-notebook-png-image-png-image-pngimg-8.png" class="card-img-top" alt="..."> 
+           
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="modal-footer" style="border-color: transparent;">
+                    <button class="btn btn-primary" onclick="window.modal1.close();">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </dialog>
+            <!--fin modal-->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)">Link</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item"> 
             <a class="nav-link" href="javascript:void(0)">Link</a>
           </li>
           <li class="nav-item dropdown">
@@ -307,161 +331,100 @@ a:link, a:visited, a:active {
     </div>
   </nav>
 
-
-  <main>
-    <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
+<main>
+  <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
     <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-        <div class="col"> 
-           <div class="card h-100 shadow-sm"> 
-           <img src="https://www.freepnglogos.com/uploads/laptop-png/download-laptop-notebook-png-image-png-image-pngimg-8.png" class="card-img-top" alt="..."> 
-           <div class="card-body"> 
-               <div class="clearfix mb-3">
-                   <span class="float-start badge rounded-pill bg-primary">ASUS Rog</span> 
-                   <span class="float-end price-hp">12354.00&euro;</span> 
-               </div>
-               <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
-                   eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
-               <div class="text-center my-4"> 
-                   <a href="#" class="btn btn-warning">Check offer</a>
+<!--producto uno-->
+      <div class="col"> 
+        <div class="card h-100 shadow-sm"> 
+          <img src="https://www.freepnglogos.com/uploads/laptop-png/download-laptop-notebook-png-image-png-image-pngimg-8.png" class="card-img-top" alt="..."> 
+            <div class="card-body"> 
+              <div class="clearfix mb-3">
+                <span class="float-start badge rounded-pill bg-primary">ASUS Rog</span> 
+                <span class="float-end price-hp">$ 12354.00</span> 
+              </div>
+                <h5 class="card-title">
+                  Notebook gamer Asus Rog Strix G15 G513RM eclipse gray 15.6", AMD Ryzen 7 
+                  6800H 16GB de RAM 512GB SSD, Nvidia RTX 3060</h5> 
+                <div class="text-center my-4"> 
+                  <a href="#" class="btn btn-warning"><i class="bi bi-cart-plus"></i> Agregar al carrito</a>
                 </div>
+            </div> 
+        </div> 
+      </div> 
+<!--fin producto uno-->
+
+<!--producto dos-->
+      <div class="col"> 
+        <div class="card h-100 shadow-sm"> 
+          <img src="https://www.freepnglogos.com/uploads/notebook-png/notebook-laptop-png-images-you-can-download-mashtrelo-14.png" class="card-img-top" alt="...">
+            <div class="card-body"> 
+              <div class="clearfix mb-3">
+                <span class="float-start badge rounded-pill bg-success">$ 12354.00</span> 
+                <span class="float-end"><a href="#">Toshiva</a></span> 
+              </div>
+                <h5 class="card-title">
+                  Notebook Dynabook Toshiba Intel Celeron 4gb 128gb 13.3 PuLG.</h5> 
+              <div class="d-grid gap-2 my-4">
+                <a href="#" class="btn btn-warning"><i class="bi bi-cart-plus"></i> Agregar al carrito</a>
+              </div> 
+            </div> 
+        </div> 
+      </div> 
+<!--fin producto dos-->
+
+<!--producto tres-->
+      <div class="col"> 
+        <div class="card h-100 shadow-sm"> 
+          <img src="https://www.freepnglogos.com/uploads/notebook-png/download-laptop-notebook-png-image-png-image-pngimg-2.png" class="card-img-top" alt="...">
+            <div class="label-top shadow-sm">Lenovo</div> 
+              <div class="card-body"> 
+                <div class="clearfix mb-3">
+                  <span class="float-start badge rounded-pill bg-success">$ 12354.00</span> 
+                  <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span> 
                 </div> 
-               </div> 
-           </div> 
-           <div class="col"> 
-               <div class="card h-100 shadow-sm"> 
-                   <img src="https://www.freepnglogos.com/uploads/notebook-png/notebook-laptop-png-images-you-can-download-mashtrelo-14.png" class="card-img-top" alt="...">
-                   <div class="card-body"> 
-                       <div class="clearfix mb-3">
-                            <span class="float-start badge rounded-pill bg-success">12354.00&euro;</span> 
-                            <span class="float-end"><a href="#">Example</a></span> 
-                           </div>
-                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
-                               eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
-                               <div class="d-grid gap-2 my-4">
-                                    <a href="#" class="btn btn-warning">Check offer</a> 
-                                   </div> 
-                               </div> 
-                           </div> 
-                       </div> 
-                       <div class="col"> 
-                           <div class="card h-100 shadow-sm"> 
-                               <img src="https://www.freepnglogos.com/uploads/notebook-png/download-laptop-notebook-png-image-png-image-pngimg-2.png" class="card-img-top" alt="...">
-                                <div class="label-top shadow-sm">Asus Rog</div> 
-                                <div class="card-body"> 
-                                   <div class="clearfix mb-3">
-                                        <span class="float-start badge rounded-pill bg-success">12354.00&euro;</span> 
-                                        <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span> 
-                                       </div> 
-                                       <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
-                                           eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
-                                           <div class="text-center my-4">
-                                                <a href="#" class="btn btn-warning">Check offer</a> 
-                                               </div> 
-                                               <div class="clearfix mb-1"> 
-                                                   <span class="float-start">
-                                                       <i class="far fa-question-circle"></i></span>
-                                                        <span class="float-end"><i class="fas fa-plus"></i></span>
-                                                        </div>
-                                                        </div>
-                                                        </div> 
-                                                       </div> 
-                                                       <div class="col"> 
-                                                           <div class="card h-100 shadow-sm">
-                                                                <img src="https://www.freepnglogos.com/uploads/xiaomi-png/xiaomi-unveils-notebook-air-from-26.png" class="card-img-top" alt="...">
-                                                                 <div class="label-top shadow-sm">DELL</div> 
-                                                                 <div class="card-body">
-                                                                    <div class="clearfix mb-3"> 
-                                                                       <span class="float-start price-hp">12354.00&euro;</span>
-                                                                        <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span> 
-                                                                       </div> 
-                                                                       <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
-                                                                           eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
-                                                                           <div class="text-center my-4">
-                                                                                <a href="#" class="btn btn-warning">Check offer</a>
-                                                                                </div> <div class="clearfix mb-1"> 
-                                                                                   <span class="float-start"><i class="far fa-question-circle"></i></span> 
-                                                                                   <span class="float-end"><i class="fas fa-plus"></i></span> 
-                                                                               </div>
-                                                                            </div> 
-                                                                           </div> 
-                                                                       </div> 
-                                                                       <div class="col"> 
-                                                                           <div class="card h-100 shadow-sm"> 
-                                                                           <img src="https://www.freepnglogos.com/uploads/iphone-png/iphone-png-image-pngpix-26.png" class="card-img-top" alt="..."> 
-                                                                           <div class="card-body"> 
-                                                                               <div class="clearfix mb-3">
-                                                                                   <span class="float-start badge rounded-pill bg-primary">ASUS Rog</span> 
-                                                                                   <span class="float-end price-hp">12354.00&euro;</span> 
-                                                                               </div>
-                                                                               <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
-                                                                                   eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
-                                                                               <div class="text-center my-4"> 
-                                                                                   <a href="#" class="btn btn-warning">Check offer</a>
-                                                                                </div>
-                                                                                </div> 
-                                                                               </div> 
-                                                                           </div> 
-                                                                           <div class="col"> 
-                                                                               <div class="card h-100 shadow-sm"> 
-                                                                                   <img src="https://www.freepnglogos.com/uploads/youtube-tv-png/youtube-tv-rca-36.png" class="card-img-top" alt="...">
-                                                                                   <div class="card-body"> 
-                                                                                       <div class="clearfix mb-3">
-                                                                                            <span class="float-start badge rounded-pill bg-success">12354.00&euro;</span> 
-                                                                                            <span class="float-end"><a href="#">Example</a></span> 
-                                                                                           </div>
-                                                                                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
-                                                                                               eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
-                                                                                               <div class="d-grid gap-2 my-4">
-                                                                                                    <a href="#" class="btn btn-warning">Check offer</a> 
-                                                                                                   </div> 
-                                                                                               </div> 
-                                                                                           </div> 
-                                                                                       </div> 
-                                                                                       <div class="col"> 
-                                                                                           <div class="card h-100 shadow-sm"> 
-                                                                                               <img src="https://www.freepnglogos.com/uploads/lcd-png/lcd-png-transparent-lcd-images-pluspng-39.png" class="card-img-top" alt="...">
-                                                                                                <div class="label-top shadow-sm">Asus Rog</div> 
-                                                                                                <div class="card-body"> 
-                                                                                                   <div class="clearfix mb-3">
-                                                                                                        <span class="float-start badge rounded-pill bg-success">12354.00&euro;</span> 
-                                                                                                        <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span> 
-                                                                                                       </div> 
-                                                                                                       <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
-                                                                                                           eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
-                                                                                                           <div class="text-center my-4">
-                                                                                                                <a href="#" class="btn btn-warning">Check offer</a> 
-                                                                                                               </div> 
-                                                                                                               <div class="clearfix mb-1"> 
-                                                                                                                   <span class="float-start">
-                                                                                                                       <i class="far fa-question-circle"></i></span>
-                                                                                                                        <span class="float-end"><i class="fas fa-plus"></i></span>
-                                                                                                                        </div>
-                                                                                                                        </div>
-                                                                                                                        </div> 
-                                                                                                                       </div> 
-                                                                                                                       <div class="col"> 
-                                                                                                                           <div class="card h-100 shadow-sm">
-                                                                                                                                <img src="https://www.freepnglogos.com/uploads/camera-png/video-camera-images-download-camera-png-13.png" class="card-img-top" alt="...">
-                                                                                                                                 <div class="label-top shadow-sm">DELL</div> 
-                                                                                                                                 <div class="card-body">
-                                                                                                                                    <div class="clearfix mb-3"> 
-                                                                                                                                       <span class="float-start price-hp">12354.00&euro;</span>
-                                                                                                                                        <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span> 
-                                                                                                                                       </div> 
-                                                                                                                                       <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut 
-                                                                                                                                           eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5> 
-                                                                                                                                           <div class="text-center my-4">
-                                                                                                                                                <a href="#" class="btn btn-warning">Check offer</a>
-                                                                                                                                                </div> <div class="clearfix mb-1"> 
-                                                                                                                                                   <span class="float-start"><i class="far fa-question-circle"></i></span> 
-                                                                                                                                                   <span class="float-end"><i class="fas fa-plus"></i></span> 
-                                                                                                                                               </div>
-                                                                                                                                            </div> 
-                                                                                                                                           </div> 
-                                                                                                                                       </div> 
-                                                                   </div> 
-                                                               </div>
-                                                              </main>
+                  <h5 class="card-title">
+                    Notebook Lenovo IdeaPad 3i Intel I5 1135g7 Ram 8gb Ssd 256gb Full hd Windows 11</h5> 
+                <div class="text-center my-4">
+                  <a href="#" class="btn btn-warning"><i class="bi bi-cart-plus"></i> Agregar al carrito</a>
+                </div> 
+                <div class="clearfix mb-1"> 
+                  <span class="float-start">
+                  <i class="far fa-question-circle"></i></span>
+                  <span class="float-end" ><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+        </div> 
+      </div> 
+<!--fin producto tres con signo de interrogación y más-->
+
+<!--producto cuatro-->
+      <div class="col"> 
+        <div class="card h-100 shadow-sm">
+          <img src="https://www.freepnglogos.com/uploads/xiaomi-png/xiaomi-unveils-notebook-air-from-26.png" class="card-img-top" alt="...">
+            <div class="label-top shadow-sm">DELL</div> 
+              <div class="card-body">
+                <div class="clearfix mb-3"> 
+                  <span class="float-start price-hp">$ 12354.00</span>
+                  <span class="float-end"><a class="text-muted small" href="#">Reviews</a></span> 
+                </div> 
+                  <h5 class="card-title">
+                    Notebook Dell Inspiron 3511-5174blk 15.6 Touchscreen Intel Core I5-1035g1 8gb De Ram 256gb Ssd Nvme Fullhd 1920x1080px Intel Uhd Graphics Win 11 Home S Negra Wireless Ac</h5> 
+                <div class="text-center my-4">
+                  <a href="#" class="btn btn-warning"><i class="bi bi-cart-plus"></i> Agregar al carrito</a>
+                </div> 
+                <div class="clearfix mb-1"> 
+                  <span class="float-start"><i class="far fa-question-circle"></i></span> 
+                  <span class="float-end"><i class="fas fa-plus"></i></span> 
+                </div>
+              </div> 
+        </div> 
+      </div>
+<!--fin producto cuatro--> 
+
+    </div> 
+  </div>
+</main>
 
 
 
