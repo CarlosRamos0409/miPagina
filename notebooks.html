@@ -282,31 +282,7 @@ a:link, a:visited, a:active {
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="window.modal1.showModal();">Ventana modal</a>
-            
-            <!-- inicio Modal -->
-            <dialog id="modal1" style="border-radius: 5px; border-color: transparent">
-              <div class="modal-dialog">
-                <div class="modal-content" style="border-color: transparent;">
-                  <!-- Modal Header -->
-                  <div class="modal-header" style="border-color: transparent;">
-                    <h4 class="modal-title">Información</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="window.modal1.close();"></button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body" style="border-color: transparent;">
-                    Modal body..
-                     <img style="width: 100%;height: 100%;" src="https://www.freepnglogos.com/uploads/laptop-png/download-laptop-notebook-png-image-png-image-pngimg-8.png" class="card-img-top" alt="..."> 
-           
-                  </div>
-                  <!-- Modal footer -->
-                  <div class="modal-footer" style="border-color: transparent;">
-                    <button class="btn btn-primary" onclick="window.modal1.close();">Cerrar</button>
-                  </div>
-                </div>
-              </div>
-            </dialog>
-            <!--fin modal-->
+            <a class="nav-link" href="javascript:void(0)">Link</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)">Link</a>
@@ -315,11 +291,11 @@ a:link, a:visited, a:active {
             <a class="nav-link" href="javascript:void(0)">Link</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categorías</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Link</a></li>
-              <li><a class="dropdown-item" href="#">Another link</a></li>
-              <li><a class="dropdown-item" href="#">A third link</a></li>
+              <li><a class="dropdown-item" href="#">Notebook</a></li>
+              <li><a class="dropdown-item" href="#">Celulares</a></li>
+              <li><a class="dropdown-item" href="#">Heladeras</a></li>
             </ul>
           </li>
         </ul>
@@ -365,7 +341,7 @@ a:link, a:visited, a:active {
               </div>
                 <h5 class="card-title">
                   Notebook Dynabook Toshiba Intel Celeron 4gb 128gb 13.3 PuLG.</h5> 
-              <div class="d-grid gap-2 my-4">
+              <div class="text-center my-4">
                 <a href="#" class="btn btn-warning"><i class="bi bi-cart-plus"></i> Agregar al carrito</a>
               </div> 
             </div> 
@@ -391,7 +367,39 @@ a:link, a:visited, a:active {
                 <div class="clearfix mb-1"> 
                   <span class="float-start">
                   <i class="far fa-question-circle"></i></span>
-                  <span class="float-end" ><i class="fas fa-plus"></i></span>
+                  <span class="float-end" style="cursor:pointer;" href="javascript:void(0)" onclick="window.modal1.showModal();"><i class="fas fa-plus"></i></span>
+                    <!-- inicio Modal -->
+                    <dialog id="modal1" style="border-radius: 5px; border-color: transparent">
+                      <div class="modal-dialog">
+                        <div class="modal-content" style="border-color: transparent;">
+                          <!-- Modal Header -->
+                          <div class="modal-header" style="border-color: transparent;">
+                            <h4 class="modal-title">Información</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="window.modal1.close();"></button>
+                          </div>
+                          <!-- Modal body -->
+                          <div class="modal-body" style="border-color: transparent;">
+                            <img style="width: 100%;height: 100%;" src="https://www.freepnglogos.com/uploads/notebook-png/download-laptop-notebook-png-image-png-image-pngimg-2.png" class="card-img-top" alt="..."> 
+                          <h4>IdeaPad 3i Intel I5</h4>
+                            <p>
+                            Estilo y potencia en un solo equipo
+                            Procesadores hasta Intel® Core™ i5 de 10ma generación
+                            Laptop liviana y elegante, con gráficos opcionales NVIDIA® GeForce® hasta MX350
+                            Pantalla de 13.3” QHD, WVA y 300 nits
+                            Gran autonomía de la batería y tecnología Rapid Charge
+                            Algunos puertos/ranuras pueden variar; colores sujetos a disponibilidad
+                          </p>
+                          </div>
+                          <!-- Modal footer -->
+                          <div class="modal-footer" style="border-color: transparent;">
+                            <button class="btn btn-primary" onclick="window.modal1.close();">Cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </dialog>
+                    <!--fin modal-->
+
+
                 </div>
             </div>
         </div> 
