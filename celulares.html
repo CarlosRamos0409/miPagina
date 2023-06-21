@@ -68,7 +68,7 @@ body {
 
 .div1 { display: inline-block; width: 20%; height: auto;   float: left; text-align: center; border: gray 1px solid; padding: 107px 20px; }
 .div2 { display: inline-block; width: 80%; height: auto; text-align: center; border: #000000 1px solid; padding: 48px 0px; }
-.div3 { display: inline-block; width: 80%; height: auto; text-align: center; border: #000000 1px solid; padding: 48px 0px; }
+.div3 { display: inline-block; width: 80%; height: auto; text-align: center; padding: 48px 0px; }
 
 
 
@@ -111,7 +111,7 @@ a:link, a:visited, a:active {
 
             <div class="col-12 text-center">
               <a class="button" alt="Sucursales" title="Tienda" style="background-color:transparent;" href="#!" role="button"><i class="bi bi-shop"></i></a>
-              <a class="img" style="background-color:transparent;" title="Código Postal" ><i class="bi bi-geo-alt"></i></a>
+              <a class="button" alt="Sucursales" title="Código Postal" style="background-color:transparent;" href="#!" role="button"><i class="bi-geo-alt"></i></a>
               <input type="number" pattern="[0-9]" placeholder="Código postal" id="cp" style="border-radius: 7px;">
     
               <a class="button" title="Clientes"style="background-color:transparent;" href="#!" role="button"><i class="bi bi-person"></i></a>
@@ -162,7 +162,89 @@ a:link, a:visited, a:active {
 
 
   <div class="container">
-  <div class="div1">Div Icono</div>
+  <div class="div1">
+
+<!--menu de filtro-->
+
+      <div class="form-group text-center"> 
+            <div class="btn-group" data-toggle="buttons"> 
+              <label class="btn btn-success form-check-label"> 
+                <input class="form-check-input" type="radio" style="display:none;"> Reset 
+              </label> <label class="btn btn-success form-check-label active"> 
+                <input class="form-check-input" type="radio" checked style="display:none;"> Apply 
+              </label> 
+            </div> 
+      </div>
+      <div class="form-group text-lg-start">
+            <div> 
+              <input type="checkbox" checked="checked"> 
+              <span class="check"></span>  
+              <label class="tick">New </label>
+              
+            </div> 
+            <div> 
+              <input type="checkbox"> <span class="check"></span>
+              <label class="tick">Sale </label> 
+            </div>
+      </div>
+       
+<div class="form-group text-lg-start">
+   <div class="box " style="border-radius: 5px;"> 
+                    <div class="box-label text-uppercase d-flex align-items-center">Outerwear 
+                      <button class="btn ml-auto" type="button" data-toggle="collapse" data-target="#inner-box" aria-expanded="false" aria-controls="inner-box" id="out" onclick="outerFilter()"> 
+                        <span class="fas fa-plus"></span> 
+                      </button> 
+                    </div> 
+    <div id="inner-box" class="collapse mt-2 mr-1"> 
+                          <div class="my-1"> 
+                            <input type="checkbox" checked="checked"> 
+                              <span class="check"></span> 
+                            <label class="tick">Windbreaker 
+                              
+                            </label> 
+                          </div> 
+                          <div class="my-1"> 
+                            <input type="checkbox"> 
+                              <span class="check"></span> 
+                            <label class="tick">Jumpsuit 
+                              
+                            </label> 
+                          </div> 
+                          <div class="my-1"> 
+                            <input type="checkbox"> 
+                              <span class="check"></span> 
+                            <label class="tick">Jacket 
+                              
+                            </label> 
+                          </div> 
+                          <div class="my-1"> 
+                             <input type="checkbox"> 
+                              <span class="check"></span> 
+                            <label class="tick">Coat 
+                             
+                            </label> 
+                          </div> 
+                          <div class="my-1"> 
+                            <input type="checkbox"> 
+                              <span class="check"></span>
+                            <label class="tick">Raincoat 
+                               
+                            </label> 
+                          </div> 
+                          <div class="my-1"> 
+                            <input type="checkbox" checked> 
+                            <span class="check"></span> 
+                            <label class="tick">Handbag 
+                              
+                              
+                            </label> 
+                          </div>
+    </div>
+   </div>
+</div>
+   <!--fin de filtro-->
+
+  </div>
   <div class="div2">Div Telefono</div>
 <div class="div3">
 <!--inicio carousel-->
@@ -174,24 +256,12 @@ a:link, a:visited, a:active {
 					<div class="carousel-item active">
 						 <div class="container">
 						 	<div class="row">
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 250px; height: 450px; margin: auto;">
-						 				<img src="https://www.freepnglogos.com/uploads/iphone-png/the-iphone-ten-png-3.png" class="card-img-top" alt="...">
-						 				<div class="card-body">
-						 					<h4 class="card-title">Why you should use skin masks ?</h4>
-						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect</p>
-						 					<button type="button" class="btn btn-warning"style="margin-top: auto;">Read More</button>
-						 					
-						 				</div>
-						 				
-						 			</div>
+						 		<div class="col-lg-4">
 						 			
-						 		</div>
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 250px; height: 450px;">
+                  <div class="card" >
 						 				<img src="https://www.freepnglogos.com/uploads/iphone-png/iphone-png-image-pngpix-26.png" class="card-img-top" alt="...">
 						 				<div class="card-body">
-						 					<h4 class="card-title">Why you should use skin masks ?</h4>
+						 					<h4 class="card-title">Samsung S23</h4>
 						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
 						 					<button type="button" class="btn btn-warning" style="margin-top: auto;">Read More</button>
 						 					
@@ -200,11 +270,26 @@ a:link, a:visited, a:active {
 						 			</div>
 						 			
 						 		</div>
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 250px; height: 450px;">
-						 				<img src="https://www.freepnglogos.com/uploads/iphone-png/file-iphone-wikimedia-commons-5.png" class="card-img-top" alt="...">
+                
+               
+						 		<div class="col-lg-4">
+						 			<div class="card" >
+						 				<img src="https://www.freepnglogos.com/uploads/iphone-png/iphone-png-image-pngpix-26.png" class="card-img-top" alt="...">
 						 				<div class="card-body">
-						 					<h4 class="card-title">Why you should use skin masks ?</h4>
+						 					<h4 class="card-title">Samsung S22</h4>
+						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+						 					<button type="button" class="btn btn-warning" style="margin-top: auto;">Read More</button>
+						 					
+						 				</div>
+						 				
+						 			</div>
+						 			
+						 		</div>
+						 		<div class="col-lg-4">
+						 			<div class="card">
+						 				<img src="https://www.freepnglogos.com/uploads/smartphone-png/photo-iphone-phone-smartphone-mobile-image-3.png" class="card-img-top" alt="...">
+						 				<div class="card-body">
+						 					<h4 class="card-title">Samsung A04</h4>
 						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
 						 					<button type="button" class="btn btn-warning">Read More</button>
 						 					
@@ -223,8 +308,8 @@ a:link, a:visited, a:active {
 					<div class="carousel-item">
 						 <div class="container">
 						 	<div class="row">
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 250px;height: 450px; margin: auto;">
+						 		<div class="col-lg-4">
+						 			<div class="card">
 						 				<img src="https://www.freepnglogos.com/uploads/mobile-png/iphone-mobile-png-transparent-background-15.png" class="card-img-top" alt="...">
 						 				<div class="card-body">
 						 					<h4 class="card-title">Why you should use skin masks ?</h4>
@@ -236,8 +321,8 @@ a:link, a:visited, a:active {
 						 			</div>
 						 			
 						 		</div>
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 250px; height: 450px;">
+						 		<div class="col-lg-4">
+						 			<div class="card">
 						 				<img src="https://www.freepnglogos.com/uploads/smartphone-png/photo-iphone-phone-smartphone-mobile-image-3.png" class="card-img-top" alt="...">
 						 				<div class="card-body">
 						 					<h4 class="card-title">Why you should use skin masks ?</h4>
@@ -249,8 +334,8 @@ a:link, a:visited, a:active {
 						 			</div>
 						 			
 						 		</div>
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 250px; height: 450px;">
+						 		<div class="col-lg-4">
+						 			<div class="card">
 						 				<img src="https://www.freepnglogos.com/uploads/airpods-png/airpods-with-mobile-phone-30.png" class="card-img-top" alt="...">
 						 				<div class="card-body">
 						 					<h4 class="card-title">Why you should use skin masks ?</h4>
